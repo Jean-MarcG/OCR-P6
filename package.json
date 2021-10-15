@@ -1,0 +1,27 @@
+{
+  "name": "ocr-p6-copie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass ./src/sass/style.scss ./src/sass/style.css -w",
+    "sass:build": "sass ./src/sass/style.scss ./src/sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jean-MarcG/ocr-p6.git"
+  },
+  "author": "JimDev <jim2212.dev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jean-MarcG/ocr-p6/issues"
+  },
+  "homepage": "https://github.com/Jean-MarcG/ocr-p6#readme",
+  "dependencies": {
+    "jshint": "^2.12.0",
+    "sweetalert2": "^10.15.5"
+  },
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
