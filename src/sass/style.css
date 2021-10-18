@@ -93,10 +93,6 @@ td {
   background-size: contain;
 }
 
-.swal2-container {
-  position: relative !important;
-}
-
 .swal2-container.swal2-backdrop-show,
 .swal2-container.swal2-noanimation {
   background: transparent !important;
@@ -193,6 +189,7 @@ aside {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 
 #player__weapon,
@@ -271,6 +268,65 @@ button.big-button:active {
 button.big-button:active::before {
   transform: translate3d(0, 0, -1em);
   box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+}
+
+/**************************
+**  Swal Fire modifications
+**************************/
+.swal2-container {
+  position: fixed !important;
+}
+
+.swal2-popup {
+  padding: 0 !important;
+  width: 100% !important;
+  height: 95% !important;
+  background-image: url("../img/zelda-background-sweet-alert-1200x700.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #46560d !important;
+  color: #fff;
+}
+
+.swal2-styled.swal2-cancel {
+  background-color: #b10505 !important;
+  color: #fff;
+  font-size: 1em;
+}
+
+.swal2-styled:focus {
+  box-shadow: 0 0 0 3px rgba(134, 244, 58, 0.5) !important;
+}
+
+.swal2-title,
+.swal2-html-container {
+  color: white !important;
+}
+
+.swal2-actions {
+  margin: 1.25em auto 1em !important;
+}
+
+.game-details-body p {
+  margin-bottom: 1rem;
+  color: white;
+}
+.game-details-body ul {
+  text-align: left;
+  margin-left: 2rem;
+}
+.game-details-body li {
+  list-style: none;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.game-rules {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

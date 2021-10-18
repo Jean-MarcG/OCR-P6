@@ -127,8 +127,18 @@ class Grid {
         this.refreshPlayerLife();
         if(otherPlayer.life <= 0){
             setTimeout(() => {
-                alert('Fin de partie');
-                window.location.reload();
+                Swal.fire({
+                    title: 'Partie terminée',
+                    text: "Voulez-vous rejouer ?",
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.reload();
+                    }
+                  });
+                
             }, 100);
         }
         this.changeActivePlayerIndex();
